@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+
+// A hack to style material dropdown so it's not transparent.
+// Didn't want to lose a bunch of time on this.
+.cdk-overlay-container .mat-mdc-select-panel,
+.cdk-overlay-container .mat-select-panel {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.4);
+}
+
+mat-error {
+  color: #ff0000 !important;
+  font-weight: 400;
+}

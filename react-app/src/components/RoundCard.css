@@ -1,0 +1,33 @@
+.animate-slideIn {
+  animation: slideIn 0.9s ease-out forwards;
+}
+
+.animate-slideIn:hover {
+  animation: slideInHover 0.5s ease-in-out;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+  background-color: #334155;
+  border-color: #64748b;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInHover {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

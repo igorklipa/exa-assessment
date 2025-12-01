@@ -1,6 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
 
-bootstrapApplication(App, appConfig)
+import { AppComponent } from './app/app.component';
+import { GameConfigService } from './app/services/game-config.service';
+import { ToastService } from './app/services/toast.service';
+
+bootstrapApplication(AppComponent, { providers: [GameConfigService, ToastService] })
   .catch((err) => console.error(err));

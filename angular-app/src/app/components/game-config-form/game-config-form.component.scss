@@ -1,0 +1,45 @@
+mat-form-field {
+  width: 100%;
+  margin: 10px 0;
+
+  [formcontrolname] {
+    padding: 0 0 0 16px;
+  }
+}
+
+mat-dialog-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.config-form {
+  margin: 4px 0;
+}
+
+.dialog-btn {
+  padding: 4px 8px;
+  margin: 0 2px;
+  font-size: 12px;
+  min-width: auto;
+  border-radius: 4px;
+
+  &__save {
+    border: 1px solid #60a5fa;
+
+    &:hover {
+      background: #60a5fa;
+      color: #e2e8f0;
+    }
+  }
+
+  &__cancel {
+    border: 1px solid #f87171;
+
+    &:hover {
+      background: #f87171;
+      color: #e2e8f0;
+    }
+  }
+}
